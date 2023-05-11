@@ -132,7 +132,7 @@ app.delete('/delete/:id', (req, res)=> {
         });
 });
 
-var port = 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(port, ()=> {
     console.log('Server is started at ' + port);
 });
